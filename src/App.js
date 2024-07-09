@@ -1,25 +1,50 @@
-import logo from './logo.svg';
+import React,{Component} from "react";
+import Offer from "./components/Offer";
+import Order from "./components/Order";
 import './App.css';
+import { BrowserRouter as Router , Route , Switch } from "react-router-dom/cjs/react-router-dom.min";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+import Buttons from "./components/Buttons";
+
+//import logo from "./images/logo.png";
+//<img src={logo} alt="logo"/>
+
+
+class App extends Component{
+  render() {
+    return (
+     
+     <Router>
+     <div className="App">
+      
+    <h1 style={{color: "Blue", height:100}}>
+      ÖZYER GROUP
+    </h1>
+      
+    
+  
+    <div style={{display:"flex", flexDirection:"row" }}>
+     <Switch>
+        <Route exact path="/">
+            <Buttons/>
+        </Route>
+        <Route path="/offers">
+            <Offer/>
+        </Route>
+        <Route path="/orders">
+            <Order/>
+        </Route>
+
+    </Switch>
+    
+
     </div>
-  );
-}
+     </div>
+   </Router>
 
-export default App;
+    );
+  }
+}
+  export default App;
+  
+  

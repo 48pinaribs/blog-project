@@ -1,38 +1,47 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 200px; /* Linkler arasındaki mesafeyi ayarlar */
+    height: 10vh;
+    margin:auto;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  .link {
+    text-decoration: none;
+    color: white;
+    background-color: blue;
+    padding: 10px 200px;
+    border-radius: 20px;
+    
   }
-  to {
-    transform: rotate(360deg);
+  
+  
+  
+  .content1 {
+        display: flex;
+        justify-content: center; /* İçeriği yatayda ortalar */
+        align-items: center; /* İçeriği dikeyde ortalar */
+        height: 7vh; /* İçeriği tam ekran yapar */
+        background-color: #3e6a89; /* Arka plan rengi */
+      }
+
+  .content2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50px;
+    height: 3vh;
+    margin:auto;
+    height: 5vh;
   }
-}
+
+  .h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px; /* Linkler arasındaki mesafeyi ayarlar */
+    height: 1vh;
+    
+    
+  }
